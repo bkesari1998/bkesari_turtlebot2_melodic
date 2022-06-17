@@ -1,12 +1,11 @@
 # turtlebot2-melodic
 
-Instalation of turtlebot2, astra camera, and rplidar packages on ROS melodic. This repository is heavily based of the repository below:
-https://github.com/gaunthan/Turtlebot2-On-Melodic
+Instalation of turtlebot2, astra camera, and rplidar packages on ROS melodic
 
 ## Table of Contents
 1. Installing turtlebot2 packages
-2. Getting astra camera working
-3. Getting RP-Lidar working
+2. Installing Astra camera packages
+3. Installing RP-Lidar packages
 4. Creating a map
 5. Autonomous navigation of a known map
 6. Sources
@@ -37,4 +36,27 @@ Build the workspace:
 catkin_make
 ```
 
-## Getting astra camera
+## Installing Astra camera packages
+Install dependences
+```
+sudo apt install ros-melodic-rgbd-launch ros-melodic-libuvc ros-melodic-libuvc-camera ros-melodic-libuvc-ros
+```
+
+Pull the repository into your ROS workspace:
+```
+cd ~/catkin_ws/src
+git clone https://github.com/bkesari/bkesari_ros_astra_camera
+```
+
+Create astra udev rule
+```
+roscd astra_camera
+chmod 777 /scripts/create_udev_rules
+./scripts/create_udev_rules
+```
+
+Go to catkin workspace and compile astra_camera
+```
+cd ~/catkin_ws
+catkin_make --pkg astra_camera
+```
