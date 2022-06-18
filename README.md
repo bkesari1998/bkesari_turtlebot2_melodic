@@ -42,7 +42,7 @@ Install dependences
 sudo apt install ros-melodic-rgbd-launch ros-melodic-libuvc ros-melodic-libuvc-camera ros-melodic-libuvc-ros
 ```
 
-Pull the repository into your ROS workspace:
+Clone the repository into your ROS workspace:
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/bkesari/bkesari_ros_astra_camera
@@ -60,3 +60,19 @@ Go to catkin workspace and compile astra_camera
 cd ~/catkin_ws
 catkin_make --pkg astra_camera
 ```
+
+## Installing RP-Lidar packages
+
+Clone the repository into your ROS workspace:
+```
+cd ~/catkin_ws/src
+https://github.com/bkesari1998/bkesari_rplidar_ros.git
+```
+
+Build the workspace:
+```
+cd ~/catkin_ws
+catkin_make
+```
+
+If the 
