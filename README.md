@@ -75,4 +75,11 @@ cd ~/catkin_ws
 catkin_make
 ```
 
-If the 
+If the USB to UART Bridge driver for the device has not been installed on the computer, download the Linux 3.x.x/4.x.x/5.x.x VCP Driver from
+https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers. Then, follow the directions at https://samliu.github.io/2018/01/06/rplidar-a2.html. The steps are summarized below.
+
+1. Extract the tarball
+2. run `make`
+3. run `cp cp210x.ko /lib/modules/`uname -r`/kernel/drivers/usb/serial`
+4. run `insmod /lib/modules/`uname -r`/kernel/drivers/usb/serial/usbserial.ko`
+5. run `insmod cp210x.ko`
