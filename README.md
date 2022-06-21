@@ -6,9 +6,6 @@ Instalation of turtlebot2, astra camera, and rplidar packages on ROS melodic
 1. Installing turtlebot2 packages
 2. Installing Astra camera packages
 3. Installing RP-Lidar packages
-4. Creating a map
-5. Autonomous navigation of a known map
-6. Sources
 
 ## Installing turtlebot2 packages
 Create or `cd` into a catkin workspace
@@ -83,3 +80,6 @@ https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers. Then, follow t
 3. run `cp cp210x.ko /lib/modules/`uname -r`/kernel/drivers/usb/serial`
 4. run `insmod /lib/modules/`uname -r`/kernel/drivers/usb/serial/usbserial.ko`
 5. run `insmod cp210x.ko`
+
+To check which USB port the device is plugged into, run `ls /dev | grep ttyUSB`. The device should be plugged into USB0.
+run `sudo chmod 666 /dev/ttyUSB0`
