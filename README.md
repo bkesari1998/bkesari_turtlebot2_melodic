@@ -49,7 +49,7 @@ Go to catkin workspace and compile astra_camera
 ```
 cd ~/catkin_ws
 catkin_make --pkg astra_camera
-soruce devel/setup.bash
+source devel/setup.bash
 ```
 
 Create astra udev rule
