@@ -42,7 +42,7 @@ sudo apt install ros-melodic-rgbd-launch ros-melodic-libuvc ros-melodic-libuvc-c
 Clone the repository into your ROS workspace:
 ```
 cd ~/catkin_ws/src
-https://github.com/orbbec/ros_astra_camera.git
+git clone https://github.com/orbbec/ros_astra_camera.git
 ```
 
 Create astra udev rule
