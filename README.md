@@ -45,6 +45,13 @@ cd ~/catkin_ws/src
 git clone https://github.com/orbbec/ros_astra_camera.git
 ```
 
+Go to catkin workspace and compile astra_camera
+```
+cd ~/catkin_ws
+catkin_make --pkg astra_camera
+soruce devel/setup.bash
+```
+
 Create astra udev rule
 ```
 roscd astra_camera
@@ -56,6 +63,7 @@ Go to catkin workspace and compile astra_camera
 ```
 cd ~/catkin_ws
 catkin_make --pkg astra_camera
+soruce devel/setup.bash
 ```
 
 ## Installing RP-Lidar packages
