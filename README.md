@@ -63,7 +63,7 @@ catkin_make --pkg astra_camera
 Clone the repository into your ROS workspace:
 ```
 cd ~/catkin_ws/src
-https://github.com/Slamtec/rplidar_ros.git
+git clone https://github.com/Slamtec/rplidar_ros.git
 ```
 
 Build the workspace:
