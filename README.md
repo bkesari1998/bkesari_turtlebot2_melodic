@@ -85,9 +85,12 @@ https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers. Then, follow t
 
 1. Extract the tarball
 2. run `make`
-3. run `cp cp210x.ko /lib/modules/`uname -r`/kernel/drivers/usb/serial`
-4. run `insmod /lib/modules/`uname -r`/kernel/drivers/usb/serial/usbserial.ko`
+3. run `cp cp210x.ko /lib/modules/\`uname -r\`/kernel/drivers/usb/serial`
+4. run `insmod /lib/modules/\`uname -r\`/kernel/drivers/usb/serial/usbserial.ko`
 5. run `insmod cp210x.ko`
+
+If the make command fails, download the patched driver from this message thread:
+https://community.silabs.com/s/question/0D58Y00008u8b0SSAQ/cp210x-to-vcp-driver-failed-to-build-for-kernel-513-ubuntu-2004?language=en_US
 
 To check which USB port the device is plugged into, run `ls /dev | grep ttyUSB`. The device should be plugged into USB0.
 run `sudo chmod 666 /dev/ttyUSB0`
