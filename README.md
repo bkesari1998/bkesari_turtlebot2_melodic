@@ -18,7 +18,7 @@ catkin_make
 
 Run the command below within the root of the catkin workspace:
 ```
-curl -sLf https://raw.githubusercontent.com/bkesari1998/bkesari1998-tbot2-melodic-install/master/install_basic.sh | bash
+curl -sLf https://raw.githubusercontent.com/bkesari1998/bkesari_turtlebot_melodic_setup/master/install_all.sh | bash
 ```
 Install the following dependencies:
 ```
