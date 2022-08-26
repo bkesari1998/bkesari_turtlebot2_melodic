@@ -36,37 +36,9 @@ source devel/setup.bash
 ```
 
 ## Installing Astra camera packages
-Install dependences
-```
-sudo apt install ros-melodic-rgbd-launch ros-melodic-libuvc ros-melodic-libuvc-camera ros-melodic-libuvc-ros
-```
+Follow the README for the astra camera package (https://github.com/orbbec/ros_astra_camera)
 
-Clone the repository into your ROS workspace:
-```
-cd ~/catkin_ws/src
-git clone https://github.com/orbbec/ros_astra_camera.git
-```
-
-Go to catkin workspace and compile astra_camera
-```
-cd ~/catkin_ws
-catkin_make --pkg astra_camera
-source devel/setup.bash
-```
-
-Create astra udev rule
-```
-roscd astra_camera
-chmod 777 /scripts/create_udev_rules
-./scripts/create_udev_rules
-```
-
-Go to catkin workspace and compile astra_camera
-```
-cd ~/catkin_ws
-catkin_make --pkg astra_camera
-source devel/setup.bash
-```
+To use turtlebot_3dsensor.launch from the turtlebot_bringup package, set the environment variable TURTLEBOT_3D_SENSOR to astra.
 
 ## Installing RP-Lidar packages
 
