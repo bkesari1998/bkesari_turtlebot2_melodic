@@ -14,6 +14,7 @@ Create or `cd` into a catkin workspace
 mkdir -p catkin_ws/src
 cd catkin_ws
 catkin_make
+source devel/setup.bash
 ```
 
 Run the command below within the root of the catkin workspace:
@@ -31,6 +32,7 @@ sudo apt-get install ros-melodic-navigation*
 Build the workspace:
 ```
 catkin_make
+source devel/setup.bash
 ```
 
 ## Installing Astra camera packages
