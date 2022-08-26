@@ -46,13 +46,13 @@ Clone the repository into your ROS workspace:
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/Slamtec/rplidar_ros.git
-source ~/catkin_ws/devel/setup.bash
 ```
 
 Build the workspace:
 ```
 cd ~/catkin_ws
 catkin_make
+source ~/catkin_ws/devel/setup.bash
 ```
 
 If the USB to UART Bridge driver for the device has not been installed on the computer, download the Linux 3.x.x/4.x.x/5.x.x VCP Driver from
