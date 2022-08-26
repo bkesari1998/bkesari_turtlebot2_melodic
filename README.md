@@ -46,6 +46,7 @@ Clone the repository into your ROS workspace:
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/Slamtec/rplidar_ros.git
+source ~/catkin_ws/devel/setup.bash
 ```
 
 Build the workspace:
